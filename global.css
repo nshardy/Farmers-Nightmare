@@ -1,0 +1,30 @@
+:root {
+    --margin: 10px;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.header {
+    position        : sticky;
+    top             : var(--margin);
+    width           : 95vw;
+    height          : 45px;
+    margin          : var(--margin);
+    padding         : 5px;
+    border-radius   : var(--margin);
+    background-color: rgba(200, 200, 200, .1);
+    backdrop-filter : blur(5px);
+}
+
+#dropdown-products {
+    display        : none;
+    text-decoration: none;
+    color          : black;
+}
+
+#menu-products:hover #dropdown-products {
+    display: block;
+}
