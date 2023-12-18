@@ -1,13 +1,7 @@
 let doc = document.querySelector('body')
 
 async function getdata() {
-    let data = await fetch('https://pokeapi.co/api/v2/pokemon/69')
-    .then((response) => {
-        if (!response.ok){
-            throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-    })
-    
+    let data = await fetch('https://github.com/nshardy/Farmers-Nightmare/blob/wiki/docs/dingledork.html')
     let json = await data.json()
 
     doc.innerHTML += json.name
